@@ -33,21 +33,21 @@ Each entry follows this template:
 
 ## Event entries
 
-### EVT-20260924-001 — Initialize tools/grok-repo-work
-- **Timestamp (IDT)**: 2026-09-24 ~17:40
-- **Duration**: ~2 min
-- **Mode / Phase**: Meta
-- **Target repo**: MKOET/.github
-- **Tools used**: github___get_repository_tree, github___search_repositories, github___push_files
-- **Estimated cost / tokens**: n/a (initial setup)
-- **Outcome**: success
+### EVT-20260924-003 — Full end-to-end run on MKOET/test-rep01
+- **Timestamp (IDT)**: 2026-09-24 ~18:00–18:10
+- **Duration**: ~12 min (analysis + content generation)
+- **Mode / Phase**: Analyze + Phase 1 + Phase 2 + Phase 3 (proposal)
+- **Target repo**: MKOET/test-rep01
+- **Tools used**: github___get_repository_tree, github___get_file_contents (×15+), github___list_commits, github___list_issues, github___search_pull_requests, github___get_me, github___push_files (failed 403)
+- **Estimated cost / tokens**: n/a
+- **Outcome**: partial (analysis + full content prepared; push blocked by permissions)
 - **Key metrics**:
-  - Files read: 0 (empty repo)
-  - Files written: 4 (README, ACTIONS-LOG, REQUIREMENTS, SKILL-OVERVIEW)
-  - Candidates identified (cleanup): 0
-  - Discrepancies found: 0
-- **Notes**: First commit to empty organization default repository. Designation `tools/grok-repo-work` chosen.
-- **Link to ACTIONS-LOG**: Actions 001–005
+  - Files read: ~18
+  - Files written/proposed: 11 (README, architecture, design, contributing, roadmap, execution-plan, 2 ADRs, local-docker, src/README)
+  - Candidates identified (cleanup): 4 directory trees (docs/product, docs/architecture, docs/delivery, knowledge)
+  - Discrepancies found: 0 (no source code to contradict docs)
+- **Notes**: User instructed “apply / push / clean”. New branch docs/standardize-20260924 prepared. Push failed with 403 Resource not accessible by integration. Full file contents and cleanup list provided to user for manual application. Authenticated identity: koetdevopsfront-arch.
+- **Link to ACTIONS-LOG**: Action 007
 
 ### EVT-20260924-002 — Add tracking log and metrics requirements
 - **Timestamp (IDT)**: 2026-09-24 ~17:54
@@ -64,6 +64,22 @@ Each entry follows this template:
   - Discrepancies found: 0
 - **Notes**: Introduced formal event tracking with time, cost, and operational metrics. Skill will be updated to require logging of these metrics on every significant run.
 - **Link to ACTIONS-LOG**: Action 006
+
+### EVT-20260924-001 — Initialize tools/grok-repo-work
+- **Timestamp (IDT)**: 2026-09-24 ~17:40
+- **Duration**: ~2 min
+- **Mode / Phase**: Meta
+- **Target repo**: MKOET/.github
+- **Tools used**: github___get_repository_tree, github___search_repositories, github___push_files
+- **Estimated cost / tokens**: n/a (initial setup)
+- **Outcome**: success
+- **Key metrics**:
+  - Files read: 0 (empty repo)
+  - Files written: 4 (README, ACTIONS-LOG, REQUIREMENTS, SKILL-OVERVIEW)
+  - Candidates identified (cleanup): 0
+  - Discrepancies found: 0
+- **Notes**: First commit to empty organization default repository. Designation `tools/grok-repo-work` chosen.
+- **Link to ACTIONS-LOG**: Actions 001–005
 
 ---
 
