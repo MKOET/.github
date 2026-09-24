@@ -43,6 +43,15 @@ All actions performed by Grok in this repository (and tightly related skill work
 - **What**: Captured a concise overview of the current github-repo-analyzer skill (modes, phases, safety rules).
 - **Location**: `tools/grok-repo-work/SKILL-OVERVIEW.md`
 
+### Action 006 — Tracking log and metrics added
+- **What**:
+  - Created `TRACKING-LOG.md` with event template and metrics fields (timestamp, duration, cost/tokens, tools, outcome, files read/written, etc.).
+  - Updated `REQUIREMENTS.md` to v1.1 — added FR-07 (Event tracking & metrics) and NFR-05 (Observability).
+  - Updated `README.md` to list the new tracking log.
+  - Recorded initial events EVT-20260924-001 and EVT-20260924-002.
+- **How**: `github___get_file_contents` + `github___push_files`.
+- **Result**: Monitoring and analysis capability now present. Skill will be updated next to enforce writing to the tracking log.
+
 ---
 
 *Subsequent actions will be appended below this line.*
