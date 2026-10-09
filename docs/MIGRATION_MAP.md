@@ -41,10 +41,10 @@ New repositories created by the MKOET platform must use the convention format:
 
 ### Backend Services (domain: ops)
 
-| Legacy Name | Convention Name |
+| Legacy Name | Convention Name | Status |
 |---|---|
 | services-koet-beta | mkoet-ops-service-beta |
-| services-koet-epsilon | mkoet-ops-service-epsilon |
+| services-koet-epsilon | mkoet-ops-service-epsilon | ✅ Converted 2026-10-09 |
 | services-koet-mu | mkoet-ops-service-mu |
 | server-koet-ai-alpha | mkoet-ops-server-ai-alpha |
 | server-koet-ai-beta | mkoet-ops-server-ai-beta |
