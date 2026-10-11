@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "gaps": [
+    {
+      "key": "96ea1023be56ab832d87a80780156d28228404df",
+      "source": "docs/ARCHITECTURE.md",
+      "claim": "Required document exists: docs/ARCHITECTURE.md",
+      "type": "undocumented",
+      "aspect": "docs",
+      "severity": "high",
+      "evidence": "docs/ARCHITECTURE.md is absent.",
+      "since": "2026-10-11",
+      "status": "new"
+    },
+    {
+      "key": "513442deef83cc5058c90e5f1b37fe82df869ae0",
+      "source": "docs/DEVELOPMENT.md",
+      "claim": "Required document exists: docs/DEVELOPMENT.md",
+      "type": "undocumented",
+      "aspect": "docs",
+      "severity": "high",
+      "evidence": "docs/DEVELOPMENT.md is absent.",
+      "since": "2026-10-11",
+      "status": "new"
+    },
+    {
+      "key": "85bcfd988b00865515244eb44d8856ff71ca5692",
+      "source": "BACKLOG.md",
+      "claim": "Required document exists: BACKLOG.md",
+      "type": "undocumented",
+      "aspect": "docs",
+      "severity": "high",
+      "evidence": "BACKLOG.md is absent.",
+      "since": "2026-10-11",
+      "status": "new"
+    },
+    {
+      "key": "019fb6cbd426fa66ba92532114a100227d9ddd49",
+      "source": "conventions",
+      "claim": "Repository name follows MKOET convention",
+      "type": "doc_drift",
+      "aspect": "conventions",
+      "severity": "low",
+      "evidence": "Observed: env-deerflow-aide",
+      "since": "2026-10-11",
+      "status": "new"
+    },
+    {
+      "key": "087128a2ec4da05f92a040b3e308ac1ff2bd7ff6",
+      "source": "conventions",
+      "claim": "Branch name follows approved prefix",
+      "type": "doc_drift",
+      "aspect": "conventions",
+      "severity": "low",
+      "evidence": "Observed: main",
+      "since": "2026-10-11",
+      "status": "new"
+    },
+    {
+      "key": "89e68d1eb3d7481fd29772511b2a68b04c724fdc",
+      "source": "conventions",
+      "claim": "Commit subject follows type(scope): subject",
+      "type": "doc_drift",
+      "aspect": "conventions",
+      "severity": "low",
+      "evidence": "Observed: 2026-10-11T14:11:07+03:00\tMerge pull request #9 from MKOET/docs/8-central-platform-analytics",
+      "since": "2026-10-11",
+      "status": "new"
+    }
+  ]
+}

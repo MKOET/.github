@@ -1,0 +1,51 @@
+﻿{
+    "repo":  "env-deerflow-aide",
+    "path":  "MKOET/env-deerflow-aide",
+    "collected_at":  "2026-10-11T11:50:55.817776+00:00",
+    "inventory":  {
+                      "file_count":  3790,
+                      "source_files":  [
+
+                                       ],
+                      "modules":  [
+
+                                  ],
+                      "test_files":  [
+
+                                     ],
+                      "endpoints":  [
+
+                                    ],
+                      "ci_workflows":  [
+                                           ".github/workflows/feature-manual-gate.yml",
+                                           ".github/workflows/mkoet-repo-analyzer-tests.yml",
+                                           ".github/workflows/mkoet-repo-converter-tests.yml"
+                                       ],
+                      "required_docs":  {
+                                            "README.md":  true,
+                                            "docs/ARCHITECTURE.md":  false,
+                                            "docs/DEVELOPMENT.md":  false,
+                                            "BACKLOG.md":  false
+                                        },
+                      "architecture_stub_suspected":  false,
+                      "backlog_checked":  0,
+                      "backlog_unchecked":  0,
+                      "git":  {
+                                  "branch":  "main",
+                                  "head":  "42a927aa97eccf8cdfcc0927d603c948be0ab179",
+                                  "last_commit":  "2026-10-11T14:11:07+03:00\tMerge pull request #9 from MKOET/docs/8-central-platform-analytics",
+                                  "working_tree_status":  ""
+                              },
+                      "conventions":  {
+                                          "repo_name_matches":  false,
+                                          "branch_name_matches":  false,
+                                          "commit_subject_matches":  false
+                                      }
+                  },
+    "documents":  {
+                      "README.md":  "[REDACTED: source README text omitted from public analytics artifact]"
+                  },
+    "code_evidence":  [
+
+                      ]
+}
