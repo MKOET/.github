@@ -1,0 +1,54 @@
+{
+  "repo": "mkoet-skill-manual-test-fixture",
+  "path": "/app/host-repos/mkoet-skill-manual-test-fixture",
+  "collected_at": "2026-10-13T10:29:55.868767+00:00",
+  "inventory": {
+    "file_count": 5,
+    "source_files": [
+      "src/inventory.py"
+    ],
+    "modules": [
+      "inventory.py"
+    ],
+    "test_files": [
+      "tests/test_inventory.py"
+    ],
+    "endpoints": [],
+    "ci_workflows": [
+      ".github/workflows/ci.yml"
+    ],
+    "required_docs": {
+      "README.md": true,
+      "docs/ARCHITECTURE.md": false,
+      "docs/DEVELOPMENT.md": false,
+      "BACKLOG.md": false
+    },
+    "architecture_stub_suspected": false,
+    "backlog_checked": 0,
+    "backlog_unchecked": 0,
+    "git": {
+      "branch": "master",
+      "head": "c505ce945246d4143a67a2422046c4a8b92df442",
+      "last_commit": "2026-10-13T13:28:30+03:00\tchore: disposable skill-test fixture",
+      "working_tree_status": "M .github/workflows/ci.yml\n M README.md\n M docs/DESIGN.md\n M src/inventory.py\n M tests/test_inventory.py"
+    },
+    "conventions": {
+      "repo_name_matches": true,
+      "branch_name_matches": false,
+      "commit_subject_matches": true
+    }
+  },
+  "documents": {
+    "README.md": "\ufeff# Synthetic Inventory Demo\n\nA disposable sample repository used to verify MKOET repository analysis behavior.\n\n## Purpose\n\nDemonstrate a tiny inventory API with a health check and one unit test.\n\n## Development\n\nRun tests with `python -m unittest discover -s tests`.\n"
+  },
+  "code_evidence": [
+    {
+      "path": "src/inventory.py",
+      "text": "\ufeffdef item_count(items):\n    \"\"\"Return the number of items in an inventory.\"\"\"\n    return len(items)\n"
+    },
+    {
+      "path": "tests/test_inventory.py",
+      "text": "\ufeffimport sys\nfrom pathlib import Path\nimport unittest\n\nsys.path.insert(0, str(Path(__file__).resolve().parents[1] / \"src\"))\nfrom inventory import item_count\n\nclass InventoryTests(unittest.TestCase):\n    def test_item_count(self):\n        self.assertEqual(item_count([\"a\", \"b\"]), 2)\n\nif __name__ == \"__main__\":\n    unittest.main()\n"
+    }
+  ]
+}

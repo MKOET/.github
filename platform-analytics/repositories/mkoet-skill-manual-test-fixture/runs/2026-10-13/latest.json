@@ -1,0 +1,23 @@
+﻿{
+    "schema_version":  1,
+    "repository":  "MKOET/mkoet-skill-manual-test-fixture",
+    "repository_name":  "mkoet-skill-manual-test-fixture",
+    "source_branch":  "master",
+    "source_head_sha":  "c505ce945246d4143a67a2422046c4a8b92df442",
+    "source_remote":  null,
+    "mode":  "degraded",
+    "generated_at_utc":  "2026-10-13T10:32:17.0372952Z",
+    "analyzer_commit":  "8e9011794f7a124710444fed8e34ca6eaf02bb55",
+    "checks_run":  [
+                       "collect",
+                       "gap-register",
+                       "dia-scores"
+                   ],
+    "limitations":  [
+                        "semantic verdict not supplied",
+                        "fixture has no GitHub remote",
+                        "advisory only"
+                    ],
+    "report_file":  "report-2026-10-13.md",
+    "central_path":  "platform-analytics/repositories/mkoet-skill-manual-test-fixture"
+}

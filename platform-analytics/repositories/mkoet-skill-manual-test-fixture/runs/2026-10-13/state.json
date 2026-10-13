@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "gaps": [
+    {
+      "key": "96ea1023be56ab832d87a80780156d28228404df",
+      "source": "docs/ARCHITECTURE.md",
+      "claim": "Required document exists: docs/ARCHITECTURE.md",
+      "type": "undocumented",
+      "aspect": "docs",
+      "severity": "high",
+      "evidence": "docs/ARCHITECTURE.md is absent.",
+      "since": "2026-10-13",
+      "status": "new"
+    },
+    {
+      "key": "513442deef83cc5058c90e5f1b37fe82df869ae0",
+      "source": "docs/DEVELOPMENT.md",
+      "claim": "Required document exists: docs/DEVELOPMENT.md",
+      "type": "undocumented",
+      "aspect": "docs",
+      "severity": "high",
+      "evidence": "docs/DEVELOPMENT.md is absent.",
+      "since": "2026-10-13",
+      "status": "new"
+    },
+    {
+      "key": "85bcfd988b00865515244eb44d8856ff71ca5692",
+      "source": "BACKLOG.md",
+      "claim": "Required document exists: BACKLOG.md",
+      "type": "undocumented",
+      "aspect": "docs",
+      "severity": "high",
+      "evidence": "BACKLOG.md is absent.",
+      "since": "2026-10-13",
+      "status": "new"
+    },
+    {
+      "key": "0937078dd20f5a0a59c8f14e65f55fc099e39c4a",
+      "source": "src/inventory.py",
+      "claim": "Document module inventory.py",
+      "type": "unspecced",
+      "aspect": "architecture",
+      "severity": "low",
+      "evidence": "Source module is not named in docs/ARCHITECTURE.md.",
+      "since": "2026-10-13",
+      "status": "new"
+    },
+    {
+      "key": "087128a2ec4da05f92a040b3e308ac1ff2bd7ff6",
+      "source": "conventions",
+      "claim": "Branch name follows approved prefix",
+      "type": "doc_drift",
+      "aspect": "conventions",
+      "severity": "low",
+      "evidence": "Observed: master",
+      "since": "2026-10-13",
+      "status": "new"
+    }
+  ]
+}
