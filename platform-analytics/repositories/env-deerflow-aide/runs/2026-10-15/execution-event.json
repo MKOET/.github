@@ -43,12 +43,19 @@
   "role": "engineering",
   "blocker": "Trusted caller-skill provenance and runtime manager-only enforcement remain unverified; no dedicated manager-allowed/direct-worker-denied runtime test was demonstrated.",
   "risk": "Do not claim runtime authorization is enforced; keep the worker unavailable as a standalone skill until the boundary is demonstrated.",
-  "next_action": "Identify or implement trusted invocation provenance at the worker activation/dispatch boundary, add positive manager and negative direct-caller tests, then rerun focused tests and CI.",
+  "next_action": "Implement or conclusively establish trusted caller provenance at the worker activation/dispatch boundary, add manager-allowed/direct-worker-denied runtime tests, and rerun focused tests and CI. Source PR #26 remains draft.",
   "verified_by": "Repository source/test inspection and observed GitHub Actions results; central publication does not verify runtime enforcement.",
   "redactions": [
     "No credentials, tokens, populated environment values, personal data, or source excerpts included."
   ],
   "publication_kind": "redacted execution-tracking checkpoint",
   "analyzer_run_performed": false,
-  "analyzer_summary_updated": false
+  "analyzer_summary_updated": false,
+  "central_publication": {
+    "pull_request": "https://github.com/MKOET/.github/pull/6",
+    "status": "merged",
+    "merge_commit_sha": "30d654b50aaa11964da84f9a655e95b7102c40be",
+    "default_branch": "main",
+    "artifacts_verified_on_default_branch": true
+  }
 }
