@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "event_id": "env-deerflow-aide-2026-10-15-manager-worker-auth-checkpoint",
+  "timestamp_utc": "2026-10-15T17:22:00Z",
+  "repository": "MKOET/env-deerflow-aide",
+  "source_branch": "feat/repository-exaction-skills",
+  "source_commit": "dbd25a9fe54f105dc7f4b4eb7477886224910693",
+  "planning_baseline_ref": null,
+  "roadmap_ref": "docs/ROADMAP.md@dbd25a9fe54f105dc7f4b4eb7477886224910693",
+  "milestone": null,
+  "release": null,
+  "feature_id": "repository-exaction-skills",
+  "work_item_id": "runtime-manager-only-worker-enforcement",
+  "prior_status": "in-progress",
+  "status": "blocked",
+  "acceptance_criteria": [
+    "Trusted, non-forgeable caller-skill provenance is established at the activation or dispatch boundary.",
+    "Manager invocation of the worker is allowed by runtime policy.",
+    "Direct worker activation or invocation from a different caller is denied by runtime policy.",
+    "Focused runtime tests and relevant CI pass on the exact candidate revision."
+  ],
+  "evidence": [
+    {
+      "url": "https://github.com/MKOET/env-deerflow-aide/pull/26",
+      "result": "Draft PR open; current head recorded as dbd25a9fe54f105dc7f4b4eb7477886224910693."
+    },
+    {
+      "url": "https://github.com/MKOET/env-deerflow-aide/actions",
+      "result": "Feature manual gate run 140, public skill discovery layout run 23, and repository analyzer tests run 48 passed on the recorded PR head."
+    },
+    {
+      "command": "python3 -m unittest discover -s deer-flow/skills/tests -v",
+      "result": "10 public skill contract/layout tests passed in the recorded local run."
+    },
+    {
+      "result": "178 focused backend authorization/policy tests passed in an isolated Python 3.12.15 / pytest 9.0.3 environment; this test suite did not demonstrate manager-allowed/direct-worker-denied caller provenance."
+    },
+    {
+      "result": "Source inspection did not demonstrate a trusted invoking-skill identity passed to the inspected activation/dispatch authorization boundary."
+    }
+  ],
+  "assignee": "repository maintainer / implementation agent",
+  "role": "engineering",
+  "blocker": "Trusted caller-skill provenance and runtime manager-only enforcement remain unverified; no dedicated manager-allowed/direct-worker-denied runtime test was demonstrated.",
+  "risk": "Do not claim runtime authorization is enforced; keep the worker unavailable as a standalone skill until the boundary is demonstrated.",
+  "next_action": "Identify or implement trusted invocation provenance at the worker activation/dispatch boundary, add positive manager and negative direct-caller tests, then rerun focused tests and CI.",
+  "verified_by": "Repository source/test inspection and observed GitHub Actions results; central publication does not verify runtime enforcement.",
+  "redactions": [
+    "No credentials, tokens, populated environment values, personal data, or source excerpts included."
+  ],
+  "publication_kind": "redacted execution-tracking checkpoint",
+  "analyzer_run_performed": false,
+  "analyzer_summary_updated": false
+}
