@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "publication_kind": "execution-tracking checkpoint",
+  "repository": "MKOET/env-deerflow-aide",
+  "source_branch": "feat/repository-exaction-skills",
+  "source_commit": "dbd25a9fe54f105dc7f4b4eb7477886224910693",
+  "collected_at": "2026-10-15T17:22:00Z",
+  "analyzer_run_performed": false,
+  "scope": "Record observed PR/CI/test and runtime-authentication status only; this is not a fresh repository analyzer run.",
+  "evidence": [
+    {
+      "kind": "pull_request",
+      "url": "https://github.com/MKOET/env-deerflow-aide/pull/26",
+      "status": "open-draft",
+      "head_sha": "dbd25a9fe54f105dc7f4b4eb7477886224910693"
+    },
+    {
+      "kind": "github_actions",
+      "workflow": "Feature manual gate",
+      "run_id": 140,
+      "status": "passed"
+    },
+    {
+      "kind": "github_actions",
+      "workflow": "Public skill discovery layout",
+      "run_id": 23,
+      "status": "passed"
+    },
+    {
+      "kind": "github_actions",
+      "workflow": "MKOET repository analyzer tests",
+      "run_id": 48,
+      "status": "passed"
+    },
+    {
+      "kind": "test_run",
+      "suite": "public skill contract/layout",
+      "result": "10 passed"
+    },
+    {
+      "kind": "test_run",
+      "suite": "focused backend authorization/policy",
+      "result": "178 passed",
+      "environment": "isolated Python 3.12.15 / pytest 9.0.3"
+    }
+  ],
+  "limitations": [
+    "Runtime manager-only worker enforcement remains unverified.",
+    "No fresh repository analyzer run was performed; existing root latest.json, state.json, and collect.json were not overwritten.",
+    "Central analytics PR must be reviewed and merged by an authorized maintainer before default-branch publication."
+  ],
+  "redactions": [
+    "No credentials, tokens, personal data, populated environment values, or unnecessary source excerpts included."
+  ]
+}
