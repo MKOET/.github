@@ -47,9 +47,16 @@
   "limitations": [
     "Runtime manager-only worker enforcement remains unverified.",
     "No fresh repository analyzer run was performed; existing root latest.json, state.json, and collect.json were not overwritten.",
-    "Central analytics PR must be reviewed and merged by an authorized maintainer before default-branch publication."
+    "Source PR #26 remains open/draft; runtime manager-only worker enforcement remains unverified."
   ],
   "redactions": [
     "No credentials, tokens, personal data, populated environment values, or unnecessary source excerpts included."
-  ]
+  ],
+  "central_publication": {
+    "pull_request": "https://github.com/MKOET/.github/pull/6",
+    "status": "merged",
+    "merge_commit_sha": "30d654b50aaa11964da84f9a655e95b7102c40be",
+    "default_branch": "main",
+    "artifacts_verified_on_default_branch": true
+  }
 }
