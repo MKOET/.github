@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "repo": "singularity-networks-framework-chatgpt",
+  "generated_on": "2026-10-16",
+  "mode": "degraded",
+  "scores": {
+    "product": 100,
+    "architecture": 100,
+    "docs": 64,
+    "pm": 100,
+    "conventions": 94
+  },
+  "gap_counts": {
+    "new": 5,
+    "persisting": 0,
+    "resolved": 0,
+    "total_current": 5
+  },
+  "gaps": [
+    {
+      "key": "087128a2ec4da05f92a040b3e308ac1ff2bd7ff6",
+      "source": "conventions",
+      "claim": "Branch name follows approved prefix",
+      "type": "doc_drift",
+      "aspect": "conventions",
+      "severity": "low",
+      "evidence": "Observed: main",
+      "since": "2026-10-16",
+      "status": "new"
+    },
+    {
+      "key": "019fb6cbd426fa66ba92532114a100227d9ddd49",
+      "source": "conventions",
+      "claim": "Repository name follows MKOET convention",
+      "type": "doc_drift",
+      "aspect": "conventions",
+      "severity": "low",
+      "evidence": "Observed: singularity-networks-framework-chatgpt",
+      "since": "2026-10-16",
+      "status": "new"
+    },
+    {
+      "key": "85bcfd988b00865515244eb44d8856ff71ca5692",
+      "source": "BACKLOG.md",
+      "claim": "Required document exists: BACKLOG.md",
+      "type": "undocumented",
+      "aspect": "docs",
+      "severity": "high",
+      "evidence": "BACKLOG.md is absent.",
+      "since": "2026-10-16",
+      "status": "new"
+    },
+    {
+      "key": "96ea1023be56ab832d87a80780156d28228404df",
+      "source": "docs/ARCHITECTURE.md",
+      "claim": "Required document exists: docs/ARCHITECTURE.md",
+      "type": "undocumented",
+      "aspect": "docs",
+      "severity": "high",
+      "evidence": "docs/ARCHITECTURE.md is absent.",
+      "since": "2026-10-16",
+      "status": "new"
+    },
+    {
+      "key": "513442deef83cc5058c90e5f1b37fe82df869ae0",
+      "source": "docs/DEVELOPMENT.md",
+      "claim": "Required document exists: docs/DEVELOPMENT.md",
+      "type": "undocumented",
+      "aspect": "docs",
+      "severity": "high",
+      "evidence": "docs/DEVELOPMENT.md is absent.",
+      "since": "2026-10-16",
+      "status": "new"
+    }
+  ],
+  "resolved": [],
+  "evidence": {
+    "collect_file": "collect.json",
+    "target_path": "/app/host-repos/singularity-networks-framework-chatgpt"
+  }
+}

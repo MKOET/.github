@@ -1,0 +1,39 @@
+{
+  "repo": "singularity-networks-framework-chatgpt",
+  "path": "/app/host-repos/singularity-networks-framework-chatgpt",
+  "collected_at": "2026-10-16T15:43:24.573420+00:00",
+  "inventory": {
+    "file_count": 1853,
+    "source_files": [],
+    "modules": [],
+    "test_files": [],
+    "endpoints": [],
+    "ci_workflows": [
+      ".github/workflows/ci.yml"
+    ],
+    "required_docs": {
+      "README.md": true,
+      "docs/ARCHITECTURE.md": false,
+      "docs/DEVELOPMENT.md": false,
+      "BACKLOG.md": false
+    },
+    "architecture_stub_suspected": false,
+    "backlog_checked": 0,
+    "backlog_unchecked": 0,
+    "git": {
+      "branch": "main",
+      "head": "2cdcb1f4a8731e7de3260fe47c6e69a2d99448a0",
+      "last_commit": "2026-10-01T11:59:40+03:00\tfix(admin-console): TypeScript errors blocking Docker build",
+      "working_tree_status": ""
+    },
+    "conventions": {
+      "repo_name_matches": false,
+      "branch_name_matches": false,
+      "commit_subject_matches": true
+    }
+  },
+  "documents": {
+    "README.md": "# Singularity Networks Framework\n\nUnified SNF client/server monorepository.\n\n## Repository layout\n\n- server/ \u2014 canonical .NET server source and tests\n- client/ \u2014 canonical Member App, Admin Console, and shared core workspace\n- shared/ \u2014 repository-level shared material\n- tests/ \u2014 repository-level test documentation\n- docs/ \u2014 architecture, planning, implementation, testing, deployment, operations, and security documentation\n- infra/ \u2014 canonical local Docker orchestration\n- scripts/ \u2014 deterministic verification scripts\n\n## Current execution state\n\n| Gate | Status |\n|---|---|\n| G0 | COMPLETE |\n| G1 | COMPLETE |\n| G2 | COMPLETE for implemented auth scope |\n| G3 | COMPLETE |\n| G4 | COMPLETE |\n| G5 | COMPLETE |\n| G6 | OPEN |\n| G7 | OPEN |\n| G8 | BLOCKED until G0\u2013G7 pass |\n\nThe single canonical execution plan is docs/planning/EXECUTION_PLAN.md.\n\n## Verified local commands\n\nFrom the repository root on Windows PowerShell:\n\n```powershell\n./scripts/verify-g3.ps1\n./scripts/verify-g4.ps1\n./scripts/verify-g5.ps1\n```\n\nThe latest local runs passed. G5 includes canonical Compose build/start, Neo4j/API/frontend health, authentication/profile smoke, API restart persistence, log capture, and cleanup.\n\n## Canonical runtime\n\n- API: http://localhost:8080\n- Member App: http://localhost:8081\n- Admin Console: http://localhost:8082\n- Neo4j Browser: http://localhost:7474\n\nG6 browser/per-unit certification and G7 security/release checks remain before release readiness.\n"
+  },
+  "code_evidence": []
+}
